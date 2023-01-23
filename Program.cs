@@ -12,4 +12,7 @@ var bean = """
     """;
 
 // Put the entries in an array
-var array = new int
+var array = new int[4, 7];
+var lines = bean.Split("\n");
+for (int y = 0; y < lines.Length; y++) {
+    var line = lin
