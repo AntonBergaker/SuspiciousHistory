@@ -15,4 +15,6 @@ var bean = """
 var array = new int[4, 7];
 var lines = bean.Split("\n");
 for (int y = 0; y < lines.Length; y++) {
-    var line = lin
+    var line = lines[y];
+    for (int x=0; x<line.Length ;x++) {
+        array[x, y] = int.Parse(line[x].ToString()
