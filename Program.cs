@@ -22,4 +22,10 @@ for (int y = 0; y < lines.Length; y++) {
 }
 
 // Create the times we need to insert
-var timeStart = DateTim
+var timeStart = DateTime.Parse(args[0]);
+
+var commitTimes = new Queue<DateTime>();
+
+{
+    int index = 0;
+    for (int
