@@ -30,4 +30,7 @@ var commitTimes = new Queue<DateTime>();
     int index = 0;
     for (int x = 0; x < array.GetLength(0); x++) {
         for (int y = 0; y < array.GetLength(1); y++) {
- 
+            var repeats = array[x, y];
+            var time = timeStart.AddDays(index++);
+
+    
