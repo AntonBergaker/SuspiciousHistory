@@ -33,4 +33,5 @@ var commitTimes = new Queue<DateTime>();
             var repeats = array[x, y];
             var time = timeStart.AddDays(index++);
 
-    
+            for (int i = 0; i < repeats; i++) {
+                commitTimes.Enqueue(time.AddMinutes(
