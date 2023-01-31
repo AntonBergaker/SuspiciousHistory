@@ -54,4 +54,9 @@ int commitCount = commitTimes.Count;
     GitCommit("💡 Initial commit", initialTime);
 }
 
-var programContent = File.ReadAllText(".
+var programContent = File.ReadAllText("../../../Program.cs");
+
+// Incrementally build Program.cs
+{
+    var emojis = new[] {
+        
