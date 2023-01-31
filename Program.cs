@@ -34,4 +34,12 @@ var commitTimes = new Queue<DateTime>();
             var time = timeStart.AddDays(index++);
 
             for (int i = 0; i < repeats; i++) {
-                commitTimes.Enqueue(time.AddMinutes(
+                commitTimes.Enqueue(time.AddMinutes(i));
+            }
+        }
+    }
+}
+
+int commitCount = commitTimes.Count;
+
+// Copy the b
