@@ -48,4 +48,6 @@ int commitCount = commitTimes.Count;
     Directory.CreateDirectory("SuspiciousHistory");
     File.Copy("../../../.gitignore", "SuspiciousHistory/.gitignore");
     File.Copy("../../../SuspiciousHistory.csproj", "SuspiciousHistory/SuspiciousHistory.csproj");
-    File.Copy("../../../SuspiciousHistory.sln", "SuspiciousHistory/SuspiciousHistor
+    File.Copy("../../../SuspiciousHistory.sln", "SuspiciousHistory/SuspiciousHistory.sln");
+    File.WriteAllText("SuspiciousHistory/Program.cs", "");
+    RunCommand("git init");
