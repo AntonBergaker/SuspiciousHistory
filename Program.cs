@@ -51,3 +51,7 @@ int commitCount = commitTimes.Count;
     File.Copy("../../../SuspiciousHistory.sln", "SuspiciousHistory/SuspiciousHistory.sln");
     File.WriteAllText("SuspiciousHistory/Program.cs", "");
     RunCommand("git init");
+    GitCommit("💡 Initial commit", initialTime);
+}
+
+var programContent = File.ReadAllText(".
