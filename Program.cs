@@ -47,4 +47,5 @@ int commitCount = commitTimes.Count;
     var initialTime = commitTimes.Dequeue();
     Directory.CreateDirectory("SuspiciousHistory");
     File.Copy("../../../.gitignore", "SuspiciousHistory/.gitignore");
-    File.Copy("../../../SuspiciousHistory.csproj", "SuspiciousHistory/SuspiciousHisto
+    File.Copy("../../../SuspiciousHistory.csproj", "SuspiciousHistory/SuspiciousHistory.csproj");
+    File.Copy("../../../SuspiciousHistory.sln", "SuspiciousHistory/SuspiciousHistor
