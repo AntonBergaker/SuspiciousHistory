@@ -45,4 +45,5 @@ int commitCount = commitTimes.Count;
 // Copy the basic files at the initial commit
 {
     var initialTime = commitTimes.Dequeue();
-    Directory.
+    Directory.CreateDirectory("SuspiciousHistory");
+    File.Copy("../../../.gitignore", "SuspiciousHistory/.gi
