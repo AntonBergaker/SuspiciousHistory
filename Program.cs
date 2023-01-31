@@ -42,4 +42,7 @@ var commitTimes = new Queue<DateTime>();
 
 int commitCount = commitTimes.Count;
 
-// Copy the b
+// Copy the basic files at the initial commit
+{
+    var initialTime = commitTimes.Dequeue();
+    Directory.
