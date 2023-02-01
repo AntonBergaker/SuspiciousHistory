@@ -64,4 +64,6 @@ var programContent = File.ReadAllText("../../../Program.cs");
     var messages = new[] {
         "Continues progress on the implemententation",
         "Adds various fixes",
-        "Commit be
+        "Commit before breaking it",
+        "Implements the upcoming feature",
+        "Develops the program",
