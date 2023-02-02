@@ -67,3 +67,6 @@ var programContent = File.ReadAllText("../../../Program.cs");
         "Commit before breaking it",
         "Implements the upcoming feature",
         "Develops the program",
+        "Fixes documentation",
+        "Fixes logic issue",
+        "Adds another step to the b
