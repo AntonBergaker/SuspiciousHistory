@@ -69,4 +69,8 @@ var programContent = File.ReadAllText("../../../Program.cs");
         "Develops the program",
         "Fixes documentation",
         "Fixes logic issue",
-        "Adds another step to the b
+        "Adds another step to the build process",
+        "Fixes off by 1 error"
+    };
+
+    var commitCountOfFile = commitCount
