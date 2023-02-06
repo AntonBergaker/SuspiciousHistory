@@ -73,4 +73,6 @@ var programContent = File.ReadAllText("../../../Program.cs");
         "Fixes off by 1 error"
     };
 
-    var commitCountOfFile = commitCount
+    var commitCountOfFile = commitCount - 2;
+    for (int i = 1; commitTimes.Count > 1; i++) {
+        File.WriteAllText("SuspiciousHi
