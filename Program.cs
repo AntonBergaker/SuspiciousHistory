@@ -75,4 +75,5 @@ var programContent = File.ReadAllText("../../../Program.cs");
 
     var commitCountOfFile = commitCount - 2;
     for (int i = 1; commitTimes.Count > 1; i++) {
-        File.WriteAllText("SuspiciousHi
+        File.WriteAllText("SuspiciousHistory/Program.cs", programContent[.. (programContent.Length * i/ commitCountOfFile)]);
+        Gi
