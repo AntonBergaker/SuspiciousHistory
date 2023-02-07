@@ -83,4 +83,8 @@ var programContent = File.ReadAllText("../../../Program.cs");
 // Commit readme
 {
     File.Copy("../../../README.md", "SuspiciousHistory/README.md");
- 
+    GitCommit($"📕 Adds README.md", commitTimes.Dequeue());
+}
+
+
+void GitCommit(string message,
