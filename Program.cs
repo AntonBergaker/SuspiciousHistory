@@ -87,4 +87,6 @@ var programContent = File.ReadAllText("../../../Program.cs");
 }
 
 
-void GitCommit(string message,
+void GitCommit(string message, DateTime time) {
+    RunCommand("git add *");
+    RunCommand($"git commit -m \"{message}\"", n
