@@ -77,4 +77,10 @@ var programContent = File.ReadAllText("../../../Program.cs");
     for (int i = 1; commitTimes.Count > 1; i++) {
         File.WriteAllText("SuspiciousHistory/Program.cs", programContent[.. (programContent.Length * i/ commitCountOfFile)]);
         GitCommit($"{RandomFromArray(emojis)} {RandomFromArray(messages)}", commitTimes.Dequeue());
-    }
+    }
+}
+
+// Commit readme
+{
+    File.Copy("../../../README.md", "SuspiciousHistory/README.md");
+ 
