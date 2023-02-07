@@ -95,4 +95,7 @@ void GitCommit(string message, DateTime time) {
     });
 }
 
-void RunCommand(string command, IEnumerable<(string, string)>? environmen
+void RunCommand(string command, IEnumerable<(string, string)>? environmentVariables = null) {
+    var info = new ProcessStartInfo();
+    info.FileName = "CMD.exe";
+   
