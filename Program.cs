@@ -98,4 +98,6 @@ void GitCommit(string message, DateTime time) {
 void RunCommand(string command, IEnumerable<(string, string)>? environmentVariables = null) {
     var info = new ProcessStartInfo();
     info.FileName = "CMD.exe";
-   
+    info.WorkingDirectory = "SuspiciousHistory";
+    info.Arguments = $"/C {command}";
+    if (env
