@@ -100,4 +100,6 @@ void RunCommand(string command, IEnumerable<(string, string)>? environmentVariab
     info.FileName = "CMD.exe";
     info.WorkingDirectory = "SuspiciousHistory";
     info.Arguments = $"/C {command}";
-    if (env
+    if (environmentVariables != null) {
+        foreach (var pair in environmentVariables) {
+            i
