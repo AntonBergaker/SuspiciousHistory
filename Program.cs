@@ -102,4 +102,7 @@ void RunCommand(string command, IEnumerable<(string, string)>? environmentVariab
     info.Arguments = $"/C {command}";
     if (environmentVariables != null) {
         foreach (var pair in environmentVariables) {
-            i
+            info.EnvironmentVariables.Add(pair.Item1, pair.Item2);
+        }
+    }
+    var process = Proces
