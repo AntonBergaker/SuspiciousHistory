@@ -105,4 +105,10 @@ void RunCommand(string command, IEnumerable<(string, string)>? environmentVariab
             info.EnvironmentVariables.Add(pair.Item1, pair.Item2);
         }
     }
-    var process = Proces
+    var process = Process.Start(info);
+    process?.Start();
+    process?.WaitForExit();
+    Thread.Sleep(50);
+}
+
+s
