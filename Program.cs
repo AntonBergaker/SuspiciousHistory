@@ -111,4 +111,6 @@ void RunCommand(string command, IEnumerable<(string, string)>? environmentVariab
     Thread.Sleep(50);
 }
 
-s
+string RandomFromArray(string[] array) {
+    return array[Random.Shared.Next(0, array.Length)];
+}
